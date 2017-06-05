@@ -72,7 +72,7 @@ describe('Koa Yup Error Middleware', () => {
       });
   });
 
-  it('should return internal server errer when non-yup validation error is thrown', async () => {
+  it('should return internal server error when non-yup validation error is thrown', async () => {
     return request.get('/test3')
       .set('Accept', 'application/json')
       .expect(500);
